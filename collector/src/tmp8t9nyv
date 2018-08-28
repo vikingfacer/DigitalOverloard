@@ -1,0 +1,14 @@
+
+
+extern crate reqwest;
+extern crate markov;
+
+use markov::Chain;
+
+
+fn main() {
+
+	let mut chain = Chain::new();
+	chain.feed_file("../../666_ibm.t");
+	println!("{}", chain.generate_str());
+}

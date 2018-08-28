@@ -1,0 +1,11 @@
+extern crate select;
+extern crate reqwest;
+
+
+
+
+
+fn main() {
+    let _resp = reqwest::get("http://textfiles.com/conspiracy/").unwrap();
+    println!("{:?}", _);
+}

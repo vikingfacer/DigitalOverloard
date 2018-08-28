@@ -1,0 +1,18 @@
+extern crate select;
+extern crate reqwest;
+
+use select::predicate::Name;
+use select::document::Document;
+
+
+
+fn main() {
+    let _resp = reqwest::get("http://textfiles.com/conspiracy/").unwrap();
+    let _doc  = Document::from_read(_resp).unwrap();
+    
+
+    for d in _doc.find(Name("tr"))
+    {
+    	if d.
+    }
+}

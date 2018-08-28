@@ -1,0 +1,5 @@
+extern crate select;.
+
+fn main() {
+    println!("Hello, world!");
+}
